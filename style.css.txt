@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    font-family: 'Comic Sans MS', cursive;
+    background:#ffd6e7;
+    overflow:hidden;
+    text-align:center;
+}
+
+.container{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+h1{
+    font-size:40px;
+    color:#ff4d88;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:20px;
+    margin:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#yesBtn{
+    background:#ff4d88;
+    color:white;
+}
+
+#noBtn{
+    background:white;
+    color:#ff4d88;
+    position:absolute;
+}
+
+.hidden{
+    display:none;
+}
+
+.message{
+    max-width:400px;
+    font-size:18px;
+    color:#d6336c;
+    margin:20px;
+}
+
+.gallery img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:20px;
+    margin:10px;
+    box-shadow:0 0 15px pink;
+}
+
+/* floating hearts */
+.hearts::before{
+    content:"💗 💕 💖 💞 💘 💓";
+    position:absolute;
+    width:100%;
+    height:100%;
+    font-size:30px;
+    animation:float 10s linear infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(100vh);}
+    100%{transform:translateY(-100vh);}
+}
