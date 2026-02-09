@@ -1,47 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Be My Valentine</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!-- PAGE 1 -->
 
-<body>
+<div id="page1" class="page active">
+    <h1 class="title" id="nameTyping"></h1>
+    <h2 class="question">Will you be my Valentine? 💌</h2>
 
-<audio autoplay loop id="bgMusic">
-    <source src="song.mp3" type="audio/mp3">
+```
+<button class="musicBtn" onclick="playMusic()">🎵 Play our song</button>
+
+<div class="buttons">
+    <button class="yes" onclick="goPage2()">Yes 💖</button>
+    <button class="no" id="no1" onmouseover="runAway('no1')">No 🙈</button>
+</div>
+```
+
+</div>
+
+<!-- add this before </body> -->
+
+<audio id="bgMusic" loop>
+    <source src="song.mp3" type="audio/mpeg">
 </audio>
-
-<div class="container" id="questionPage">
-    <h1>Will you be my Valentine? 💗</h1>
-
-    <div class="buttons">
-        <button id="yesBtn">Yes 💞</button>
-        <button id="noBtn">No 😒</button>
-    </div>
-</div>
-
-<div class="container hidden" id="lovePage">
-    <h1>I knew you would say YES! 💖</h1>
-
-    <p class="message">
-        From the moment I met you, my world became softer, brighter and happier.
-        You are my favorite person, my peace, and my biggest smile.
-
-        Thank you for existing in my life.
-        I promise to make you smile everyday 💗
-    </p>
-
-    <div class="gallery">
-        <img src="https://i.pinimg.com/736x/76/4a/f4/764af4b5c1c79b9cce70a2d8f0d4bba7.jpg">
-        <img src="https://i.pinimg.com/736x/67/13/8d/67138dd8f5f34ad29cc0b8fa9fba3d63.jpg">
-        <img src="https://i.pinimg.com/736x/5d/27/1b/5d271b3fd67c1b4a4e46b9e99df4eec5.jpg">
-    </div>
-
-    <div class="hearts"></div>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
