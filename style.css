@@ -78,3 +78,15 @@ button{
     0%{transform:translateY(100vh);}
     100%{transform:translateY(-100vh);}
 }
+.musicBtn{
+margin-top:10px;
+background:#fff0f6;
+color:#d63384;
+border:2px solid #ff8fab;
+}
+
+.musicBtn:hover{
+transform:scale(1.1);
+}
+
+
